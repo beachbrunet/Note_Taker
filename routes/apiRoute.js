@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const { fstat } = require("fs");
 const db = require("../db/db.json");
+const notes = [];
 
 // ROUTES (to get notes, create notes, then delete)-------------------------------------------------
 // get note
@@ -15,15 +16,14 @@ app.get("/notes", function (req, res) {
 app.post("/notes", (req, res) => {
   req.body.id = notes.length.toString();
   console.log(req.body);
+  notes.push(req.body);
 });
 
-// writeNote.push(req.body);
-
 // fs.writeFileSync(
-//   path.join(__dirname, "./db/db.json"),
-//   JSON.stringify(content, null, 2),
+//   path.join(__dirname, "../db/db.json"),
+//   JSON.stringify(writeNote, null, 2),
 //   (err) =>
-//     err ? console.error(err) : console.info(`\nData written to ${destination}`)
+//     err ? console.error(err)
 
 // example from 21
 // const writeToFile = (destination, content) =>

@@ -35,7 +35,7 @@ const getNotes = () =>
     },
   });
 
-  // POST IS HERE
+// POST IS HERE
 const saveNote = (note) =>
   fetch("/api/notes", {
     method: "POST",
@@ -45,7 +45,6 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
-  
 // Delete Option HERE
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
