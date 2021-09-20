@@ -34,13 +34,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 <!-- ----------------------- -->
 
-![Screen Shot](https://.png)
-
-## Recources
-
-<!-- ----------------------- -->
-
-[BootStrap](https://getbootstrap.com/)
+![Screen Shot](images/ScreenShot.png)
 
 ## Heroku
 

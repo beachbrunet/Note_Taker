@@ -33,8 +33,6 @@
 
 //  add dependancies
 const express = require("express");
-const fs = require("fs");
-const path = require("path");
 const api = require("./routes/apiRoute");
 const html = require("./routes/HTMLroutes");
 

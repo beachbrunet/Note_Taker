@@ -2,8 +2,6 @@
 const path = require("path");
 const express = require("express");
 const app = express();
-const { fstat } = require("fs");
-const db = require("../db/db.json");
 const notes = [];
 
 // ROUTES (to get notes, create notes, then delete)-------------------------------------------------
