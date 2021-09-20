@@ -1,5 +1,6 @@
 const path = require("path");
-const app = require("express");
+const express = require("express");
+const app = express();
 
 // here is where you combine note and html
 
