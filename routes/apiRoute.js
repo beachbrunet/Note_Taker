@@ -19,25 +19,4 @@ app.post("/notes", (req, res) => {
   notes.push(req.body);
 });
 
-// fs.writeFileSync(
-//   path.join(__dirname, "../db/db.json"),
-//   JSON.stringify(writeNote, null, 2),
-//   (err) =>
-//     err ? console.error(err)
-
-// example from 21
-// const writeToFile = (destination, content) =>
-//   fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
-//   err ? console.error(err) : console.info(`\nData written to ${destination}`)
-// );
-
-// get routes
-// app.get("/", (req, res) =>
-//   res.sendFile(path.join(__dirname, "/public/index.html"))
-// );
-
-// app.get("/notes", (req, res) =>
-//   res.sendFile(path.join(__dirname, "/public/index.html"))
-// );
-
 module.exports = app;
