@@ -8,8 +8,9 @@
 // Features
 // notes exsiting notes on left hand side
 // save icon on top of page
+// NEED TO DO!!
 // existing notes are shown after the user saves their notes and both apear
-// click on saved notes display that note on the right hand column
+
 // adds note via icon
 // then that presents empty feilds to enter a new note on the right column
 
