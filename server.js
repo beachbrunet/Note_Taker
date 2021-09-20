@@ -35,7 +35,6 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const data = require("./db/db.json");
 const api = require("./routes/apiRoute");
 const html = require("./routes/HTMLroutes");
 

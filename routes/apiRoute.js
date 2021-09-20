@@ -1,20 +1,33 @@
 //  add dependancies
 const path = require("path");
-const get = require("./db/db.json");
+const app = require("express");
+const { fstat } = require("fs");
+const db = require("../db/db.json");
 
 // ROUTES (to get notes, create notes, then delete)-------------------------------------------------
+// get note
+app.get("notes", function (req, res) {
+  res.json(notes);
+});
 
-app.get("/"),
-  function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/index.html"));
-  };
+// create note
+app.post("/notes", (req, res) => {
+  req.body.id = notes.length.toString();
+  console.log(req.body);
+});
 
-app.get("notes"),
-  function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/notes.html"));
-  };
+writeNote.push(req.body);
 
-app.get("notes"),
-  function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/notes.html"));
-  };
+fs.writeFileSync(
+  path.join(__dirname, "./db/db.json"),
+  JSON.stringify(content, null, 2),
+  (err) =>
+    err ? console.error(err) : console.info(`\nData written to ${destination}`)
+
+  // example from 21
+  // const writeToFile = (destination, content) =>
+  //   fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
+  //   err ? console.error(err) : console.info(`\nData written to ${destination}`)
+  // );
+);
+// module.exports = app;

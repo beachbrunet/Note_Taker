@@ -42,12 +42,11 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 [BootStrap](https://getbootstrap.com/)
 
-
-## References
+## Heroku
 
 <!-- ----------------------- -->
 
-[References used]()
+[Heroku]()
 
 ## Contributions and Contact Information
 
