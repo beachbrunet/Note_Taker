@@ -7,12 +7,11 @@ const db = require("../db/db.json");
 
 // ROUTES (to get notes, create notes, then delete)-------------------------------------------------
 // get note
-app.get("notes", function (req, res) {
+app.get("/notes", function (req, res) {
   res.json(notes);
 });
 
 // create note
-
 app.post("/notes", (req, res) => {
   req.body.id = notes.length.toString();
   console.log(req.body);
