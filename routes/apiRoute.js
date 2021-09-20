@@ -17,6 +17,7 @@ app.post("/notes", (req, res) => {
   req.body.id = notes.length.toString();
   console.log(req.body);
   notes.push(req.body);
+  res.json(true);
 });
 
 module.exports = app;

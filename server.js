@@ -38,8 +38,8 @@ const path = require("path");
 const api = require("./routes/apiRoute");
 const html = require("./routes/HTMLroutes");
 
-// API route
-const PORT = 3001;
+// API route will
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 //  Middleware for parsing JSON and urlencoded form data
