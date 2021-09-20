@@ -36,6 +36,8 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const data = require("./db/db.json");
+const api = require("./routes/apiRoute");
+const html = require("./routes/HTMLroutes");
 
 // API route
 const PORT = 3001;
@@ -46,8 +48,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.use("/api", apiRoutes);
-app.use("/", HTMLroutes);
+app.use("/api", api);
+app.use("/", html);
 
 app.listen(PORT, function () {
   console.log("App listening on PORT http://localhost:" + PORT);
